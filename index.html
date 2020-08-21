@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Tetris</title>
+        <link rel='stylesheet' type='text/css' href='app.css'>
+    </head>
+    <body>
+        <main>
+            <canvas id='mainContainer' width='240' height='400'></canvas>
+            <div id='scoreContainer'>
+                <h2 id='scoreHeader'>Score:</h2>
+                <div id='score'></div>
+                <h2 id='rowHeader'>Rows Cleared:</h2>
+                <div id='rows'></div>
+            </div>
+            <div id='gameOverModal' class='modal'>
+                <div class='modalContent'>
+                    <h3>Game Over!</h3>
+                    <p>Score: <span id='finalScore'></span></p>
+                    <p>Rows cleared: <span id='finalRowCount'></span></p>
+                    <div id='buttonRow'>
+                        <button type='button' onclick='newGame()'>Restart</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src='app.js'></script>
+    </body>
+</html>
