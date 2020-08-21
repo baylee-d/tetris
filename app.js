@@ -3,16 +3,7 @@ const context = canvas.getContext('2d');
 
 context.scale(20, 20);
 
-/*
-    Set up the modal
-*/
 const modal = document.getElementById('gameOverModal');
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = 'none';
-    }
-}
 
 let gameOver = false;
 
